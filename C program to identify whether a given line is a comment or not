@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<ctype.h>
+#include<string.h>
+void main()
+{
+    char ch,f[20];
+    int j;
+    while(1)
+    {
+        printf("Input:\n\tEnter comment:");
+        gets(f);
+        printf("Output:\n\t");
+        if(f[0]=='/' && f[1]=='/' && f[2]!='/' )
+        {
+            printf("It is a comment\n\n");
+        }
+        else if(f[0]=='/' && f[1]=='*' && f[2]!='*' )
+        {
+            printf("It is a comment\n\n");
+        }
+        else
+        {
+            printf("It is not a comment\n\n");
+        }
+        ch++;
+}
+}
